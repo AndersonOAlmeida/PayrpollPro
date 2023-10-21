@@ -3,6 +3,14 @@
     padding: 0;
 }
 
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
 :root {
     --cor-payroll: rgb(132, 14, 201);
     --cor-btn-slc: rgb(160, 100, 200);
@@ -12,21 +20,31 @@
 .cabecalho {
     display: flex;
     justify-content: space-between;
+    margin: 5vw;
+}
+
+.cabecalho .menu {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.cabecalho nav li a {
+    padding: 12px 10px;
+    background-color: var(--cor-payroll);
+    margin: 10px;
+    border-radius: 10px;
 
 }
 
-.menu {
-    flex-direction: row;
-}
-
-.menu li {
-    text-decoration: none;
-
+.cabecalho nav li a:hover{
+    background-color: var(--cor-btn-slc);
+    transition: 0.3s;
 }
 
 .container {
     display: flex;
-    margin-top: 175px;
+    margin-top: 7vw;
 }
 
 .img-ptn {
@@ -38,6 +56,7 @@
     color: var(--cor-txt-btn);
     background-color: var(--cor-payroll);
     width: 400px;
+    height: 45px;
     margin: 25px;
     border-radius: 15px;
     font-size: 20px;
