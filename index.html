@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Folha de Ponto</title>
+    <link rel="stylesheet" href="./styles/index.css">
+</head>
+<body>
+    <header class="cabecalho" id="cabecalho">
+        <h1>PayrollPro</h1>
+        <ul class="menu">
+            <li>Folha de Ponto</li>
+            <li>Holerite</li>
+            <li>Férias</li>
+        </ul>
+    </header>
+    <main class="container">
+        <img src="./images/imagem-folha-ponto.png" alt="Imagem ilustrativa de alguem batendo ponto" class="img-ptn">
+        <div class="bater-ponto">
+            <h1>Registro de Horas</h1>
+            <label for="registro">Registro: </label>
+            <input type="text" id="registro"><br>
+            <label for="data">Data: </label>
+            <input type="date" id="data"><br>
+            <label for="entrada">Hora de Entrada: </label>
+            <input type="time" id="entrada"><br>
+            <label for="saida">Hora de Saída: </label>
+            <input type="time" id="saida"><br>
+            <button class="registro" onclick="calcularHoras()">Calcular Total de Horas</button>
+            <p>Total de Horas: <span id="totalHoras">0</span></p>
+        </div>
+        <script src="./js/script.js"></script>
+        <div id="reg-ponto" class="bater-ponto">
+            <h4>Último Registro</h4><br>
+            <div class="horario">
+                <p class="idponto" id="dataAtual">00/00/0000 às 00:00</p><br><br>
+            </div>
+            <hr><br>
+            <button class="registro"><img class="img-ponto" src="./images/time-card.png">    Registrar Ponto</button>
+        </div>
+    </main>
+</body>
+</html>

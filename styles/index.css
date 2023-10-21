@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --cor-payroll: rgb(132, 14, 201);
+    --cor-btn-slc: rgb(160, 100, 200);
+    --cor-txt-btn: #FFFFFF;
+}
+
+.container {
+    margin-top: 175px;
+}
+
+.bater-ponto {
+    margin-left: 10px;
+}
+
+.registro {
+    color: var(--cor-txt-btn);
+    background-color: var(--cor-payroll);
+    width: 400px;
+    margin: 25px;
+    border-radius: 15px;
+    font-size: 20px;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.registro:hover {
+    background-color: ;
+    transition: 0.2s;
+}
+
+.img-ponto {
+    width: 20px;
+    margin-top: 5px;;
+}
+
+.horario {
+    flex-direction: row;
+
+}
+
+.idponto {
+    display: none;
+}
