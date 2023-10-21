@@ -41,6 +41,7 @@ a {
 .cabecalho nav li a:hover{
     background-color: var(--cor-btn-slc);
     transition: 0.3s;
+    cursor: pointer;
 }
 
 .container {
@@ -69,6 +70,7 @@ a {
 .registro:hover {
     background-color: var(--cor-btn-slc);
     transition: 0.2s;
+    cursor: pointer;
 }
 
 .img-ponto {
