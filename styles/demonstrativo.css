@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+:root {
+    --cor-payroll: rgb(132, 14, 201);
+    --cor-btn-slc: rgb(160, 100, 200);
+    --cor-txt-btn: #FFFFFF;
+}
+
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 5vw;
+    background-color: var(--cor-payroll);
+}
+
+.cabecalho .menu {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.cabecalho nav li a {
+    padding: 12px 10px;
+    background-color: var(--cor-txt-btn);
+    margin: 10px;
+    border-radius: 10px;
+    border: 1.5px solid;
+}
+
+.cabecalho nav li a:hover{
+    background-color: var(--cor-btn-slc);
+    transition: 0.3s;
+    cursor: pointer;
+}
