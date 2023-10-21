@@ -17,5 +17,16 @@
             </ul>
         </nav>
     </header>
+    <main>
+        <h1>Determinação de Data de Férias</h1>
+        <form>
+            <label for="tempoRegistro">Tempo de Registro na Empresa (em anos):</label>
+            <input type="number" id="tempoRegistro" required><br><br>
+            <button type="button" onclick="calcularDataFerias()">Calcular Data de Início das Férias</button>
+        </form>
+    
+        <div id="resultado"></div>
+        <script src="./js/requerimento.js"></script>
+    </main>
 </body>
 </html>
