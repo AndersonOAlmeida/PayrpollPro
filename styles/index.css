@@ -21,7 +21,9 @@ a {
 .cabecalho {
     display: flex;
     justify-content: space-between;
-    margin: 5vw;
+    margin: 0;
+    padding: 5vw;
+    background-color: var(--cor-payroll);
 }
 
 .cabecalho .menu {
@@ -35,7 +37,7 @@ a {
     background-color: var(--cor-payroll);
     margin: 10px;
     border-radius: 10px;
-
+    border: 1.5px solid;
 }
 
 .cabecalho nav li a:hover{
