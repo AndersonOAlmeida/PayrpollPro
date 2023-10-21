@@ -34,7 +34,7 @@ a {
 
 .cabecalho nav li a {
     padding: 12px 10px;
-    background-color: var(--cor-payroll);
+    background-color: var(--cor-txt-btn);
     margin: 10px;
     border-radius: 10px;
     border: 1.5px solid;
