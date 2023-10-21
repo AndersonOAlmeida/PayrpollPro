@@ -9,12 +9,29 @@
     --cor-txt-btn: #FFFFFF;
 }
 
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.menu {
+    flex-direction: row;
+}
+
+.menu li {
+    text-decoration: none;
+
+}
+
 .container {
+    display: flex;
     margin-top: 175px;
 }
 
-.bater-ponto {
+.img-ptn {
     margin-left: 10px;
+    width: 50vw;
 }
 
 .registro {
@@ -30,20 +47,11 @@
 }
 
 .registro:hover {
-    background-color: ;
+    background-color: var(--cor-btn-slc);
     transition: 0.2s;
 }
 
 .img-ponto {
     width: 20px;
-    margin-top: 5px;;
-}
-
-.horario {
-    flex-direction: row;
-
-}
-
-.idponto {
-    display: none;
+    margin-top: 5px;
 }
