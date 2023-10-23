@@ -26,6 +26,10 @@ a {
     background-color: var(--cor-payroll);
 }
 
+.cabecalho h1 {
+    color: var(--cor-txt-btn);
+}
+
 .cabecalho .menu {
     display: flex;
     align-items: center;
