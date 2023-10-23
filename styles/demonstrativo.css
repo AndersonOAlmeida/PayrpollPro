@@ -82,3 +82,8 @@ a {
     justify-content: space-between;
     flex-direction: row;
 }
+
+.img-btn {
+    width: 1.3vw;
+    height: 3vh;
+}
