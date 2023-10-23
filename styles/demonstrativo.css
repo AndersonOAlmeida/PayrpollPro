@@ -16,13 +16,15 @@ a {
     --cor-payroll: rgb(132, 14, 201);
     --cor-btn-slc: rgb(160, 100, 200);
     --cor-txt-btn: #FFFFFF;
+    --sombra-form: 0px 15px 20px rgba(0,0,0,0.2);
+    --fundo-form: #FFFFFF;
 }
 
 .cabecalho {
     display: flex;
     justify-content: space-between;
     margin: 0;
-    padding: 3vw;
+    padding: 2vw;
     background-color: var(--cor-payroll);
 }
 
@@ -44,4 +46,35 @@ a {
     background-color: var(--cor-btn-slc);
     transition: 0.3s;
     cursor: pointer;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    margin: 8vw;
+}
+
+.ferias-img {
+    width: 25vw;
+}
+
+.form__dem {
+    text-align: center;
+    background-color: var(--fundo-form);
+    border-radius: 15px;
+    padding: 12px;
+    box-shadow: var(--sombra-form);
+}
+
+.calc-btn {
+    color: var(--cor-txt-btn);
+    background-color: var(--cor-payroll);
+    width: 400px;
+    height: 45px;
+    margin: 25px;
+    border-radius: 15px;
+    font-size: 20px;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
 }

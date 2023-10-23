@@ -22,7 +22,7 @@ a {
     display: flex;
     justify-content: space-between;
     margin: 0;
-    padding: 3vw;
+    padding: 2vw;
     background-color: var(--cor-payroll);
 }
 

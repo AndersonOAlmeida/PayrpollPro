@@ -19,20 +19,22 @@
         </nav>
     </header>
     <main class="container">
-        <h1>Demonstrativo de Férias</h1>
-    <form>
-        <label for="nome">Nome: </label>
-        <input type="text" id="nome" required><br><br>
-        <label for="inicio">Data de Início: </label>
-        <input type="date" id="inicio" required><br><br>
-        <label for="fim">Data de Término: </label>
-        <input type="date" id="fim" required><br><br>
-        <button type="button" onclick="calcularFerias()">Calcular Duração das Férias</button>
-    </form>
-
-    <div id="resultado"></div>
-
-
+    <div>
+        <img class="ferias-img" src="./images/ferias.png">
+    </div>
+    <div class="form__dem"><br>
+        <h1>Demonstrativo de Férias</h1><br>
+        <form>
+            <label for="nome">Nome: </label>
+            <input type="text" id="nome" required><br><br>
+            <label for="inicio">Data de Início: </label>
+            <input type="date" id="inicio" required><br><br>
+            <label for="fim">Data de Término: </label>
+            <input type="date" id="fim" required><br><br>
+            <button class="calc-btn" type="button" onclick="calcularFerias()">Calcular Duração das Férias</button>
+        </form>
+        <div id="resultado"></div>
+    </div>
     <script src="./js/demonstrativo.js"></script>
     </main>
 </body>
