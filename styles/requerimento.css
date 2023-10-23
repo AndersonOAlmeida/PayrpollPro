@@ -61,3 +61,16 @@ a {
     padding: 12px;
     box-shadow: var(--sombra-form);
 }
+
+.form-btn {
+    color: var(--cor-txt-btn);
+    background-color: var(--cor-payroll);
+    width: 400px;
+    height: 45px;
+    margin: 25px;
+    border-radius: 15px;
+    font-size: 20px;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+}

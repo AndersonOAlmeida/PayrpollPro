@@ -70,7 +70,7 @@ a {
     box-shadow: var(--sombra-form);
 }
 
-.calc-btn {
+.form-btn {
     color: var(--cor-txt-btn);
     background-color: var(--cor-payroll);
     width: 400px;
