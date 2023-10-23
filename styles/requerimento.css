@@ -49,3 +49,11 @@ a {
     transition: 0.3s;
     cursor: pointer;
 }
+
+.form__dem {
+    text-align: center;
+    background-color: var(--fundo-form);
+    border-radius: 15px;
+    padding: 12px;
+    box-shadow: var(--sombra-form);
+}
