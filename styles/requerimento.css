@@ -26,6 +26,10 @@ a {
     background-color: var(--cor-payroll);
 }
 
+.calendario {
+    width: 25vw;
+}
+
 .cabecalho h1 {
     color: var(--cor-txt-btn);
 }
