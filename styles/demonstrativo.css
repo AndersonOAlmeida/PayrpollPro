@@ -62,6 +62,10 @@ a {
     width: 5vw
 }
 
+.sair-img {
+    width: 12px;
+}
+
 .cabecalho nav li a {
     padding: 12px 10px;
     background-color: transparent;

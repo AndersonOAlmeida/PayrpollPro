@@ -54,6 +54,34 @@ a {
     cursor: pointer;
 }
 
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo h1 {
+    width: 3vw;
+    color: var(--cor-logo);
+}
+
+.logo-img {
+    width: 5vw
+}
+
+.sair-img {
+    width: 12px;
+}
+
+.cabecalho .btn-sair {
+    border: none;
+}
+
+.btn-sair-img {
+    width: 15px;
+    height: 15px;
+    color: white;
+}
+
 .fundo-img {
     position: absolute; /* coloca o elemento em uma camada diferente */
     z-index: -1; /* seleciona a camada que o elemento deve ser posicionado */
