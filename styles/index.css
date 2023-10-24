@@ -50,6 +50,14 @@ a {
     cursor: pointer;
 }
 
+.fundo-img {
+    position: absolute; /* coloca o elemento em uma camada diferente */
+    z-index: -1; /* seleciona a camada que o elemento deve ser posicionado */
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden; /* ajusta o video no tamanho certo da tela */
+}
+
 .container {
     display: flex;
     margin-top: 7vw;
