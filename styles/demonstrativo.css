@@ -25,7 +25,6 @@ a {
     justify-content: space-between;
     margin: 0;
     padding: 2vw;
-    background-color: transparent;
 }
 
 .cabecalho h1 {
@@ -36,6 +35,16 @@ a {
     display: flex;
     align-items: center;
     height: 100%;
+}
+
+.cabecalho .btn-sair {
+    border: none;
+}
+
+.btn-sair-img {
+    width: 15px;
+    height: 15px;
+    color: white;
 }
 
 .cabecalho nav li a {
