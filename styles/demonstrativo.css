@@ -18,6 +18,7 @@ a {
     --cor-txt-btn: #FFFFFF;
     --sombra-form: 0px 15px 20px rgba(0,0,0,0.2);
     --fundo-form: #FFFFFF;
+    --cor-logo: #9fa4a8;
 }
 
 .cabecalho {
@@ -45,6 +46,20 @@ a {
     width: 15px;
     height: 15px;
     color: white;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo h1 {
+    width: 3vw;
+    color: var(--cor-logo);
+}
+
+.logo-img {
+    width: 5vw
 }
 
 .cabecalho nav li a {
