@@ -40,10 +40,12 @@ a {
 
 .cabecalho nav li a {
     padding: 12px 10px;
-    background-color: var(--cor-txt-btn);
+    background-color: transparent;
     margin: 10px;
     border-radius: 10px;
     border: 1.5px solid;
+    border-color: var(--cor-txt-btn);
+    color: var(--cor-txt-btn);
 }
 
 .cabecalho nav li a:hover{
