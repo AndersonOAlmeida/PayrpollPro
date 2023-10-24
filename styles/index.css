@@ -47,7 +47,9 @@ a {
 }
 
 .cabecalho nav li a:hover{
-    background-color: var(--cor-btn-slc);
+    /* background-color: var(--cor-btn-slc); */
+    color: var(--cor-btn-slc);
+    border-color: var(--cor-btn-slc);
     transition: 0.3s;
     cursor: pointer;
 }

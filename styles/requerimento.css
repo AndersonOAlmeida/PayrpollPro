@@ -47,7 +47,9 @@ a {
 }
 
 .cabecalho nav li a:hover{
-    background-color: var(--cor-btn-slc);
+    /* background-color: var(--cor-btn-slc); */
+    color: var(--cor-btn-slc);
+    border-color: var(--cor-btn-slc);
     transition: 0.3s;
     cursor: pointer;
 }
@@ -57,7 +59,6 @@ a {
     z-index: -1; /* seleciona a camada que o elemento deve ser posicionado */
     width: 100vw;
     height: 100vh;
-    overflow: hidden; /* ajusta o video no tamanho certo da tela */
 }
 
 .calendario {
