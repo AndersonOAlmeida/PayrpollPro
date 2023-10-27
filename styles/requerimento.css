@@ -18,7 +18,8 @@ a {
     --cor-txt-btn: #FFFFFF;
     --sombra-form: 0px 15px 20px rgba(0,0,0,0.2);
     --fundo-form: #FFFFFF;
-    --cor-logo: #9fa4a8; 
+    --cor-logo: #9fa4a8;
+    --cor-clk: rgb(50, 5, 75);
 }
 
 .fundo-img {
@@ -61,6 +62,14 @@ a {
     /* background-color: var(--cor-btn-slc); */
     color: var(--cor-btn-slc);
     border-color: var(--cor-btn-slc);
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.cabecalho nav li a:active{
+    /* background-color: var(--cor-btn-slc); */
+    color: var(--cor-clk);
+    border-color: var(--cor-clk);
     transition: 0.3s;
     cursor: pointer;
 }
