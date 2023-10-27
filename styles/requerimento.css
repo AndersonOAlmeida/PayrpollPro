@@ -16,6 +16,17 @@ a {
     --cor-payroll: rgb(132, 14, 201);
     --cor-btn-slc: rgb(160, 100, 200);
     --cor-txt-btn: #FFFFFF;
+    --sombra-form: 0px 15px 20px rgba(0,0,0,0.2);
+    --fundo-form: #FFFFFF;
+    --cor-logo: #9fa4a8; 
+}
+
+.fundo-img {
+    position: absolute; /* coloca o elemento em uma camada diferente */
+    z-index: -1; /* seleciona a camada que o elemento deve ser posicionado */
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden; /* ajusta o video no tamanho certo da tela */
 }
 
 .cabecalho {
@@ -101,6 +112,11 @@ a {
     box-shadow: var(--sombra-form);
 }
 
+.img-btn {
+    width: 1.3vw;
+    height: 3vh;
+}
+
 .form-btn {
     color: var(--cor-txt-btn);
     background-color: var(--cor-payroll);
@@ -113,3 +129,10 @@ a {
     justify-content: space-between;
     flex-direction: row;
 }
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    margin: 8vw;
+}
+

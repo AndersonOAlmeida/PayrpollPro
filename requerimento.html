@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Solicitação de Férias</title>
-    <link rel="shortcut icon" href="./images/P-Logo.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./images/guia-payroll.png" type="image/x-icon">
     <link rel="stylesheet" href="./styles/requerimento.css">
 </head>
 <body>
@@ -28,12 +28,12 @@
     <main class="container">
         <img class="calendario" src="./images/calendario.png">
         <div class="form__dem">
-        <h1>Determinação de Data de Férias</h1>
-            <form>
-                <label for="tempoRegistro">Tempo de Registro na Empresa (em anos):</label>
-                <input type="number" id="tempoRegistro" required><br><br>
-                <button class="form-btn" type="button" onclick="calcularDataFerias()">Calcular Data de Início das Férias</button>
-            </form>
+            <h1>Determinação de Data de Férias</h1><br><hr><br><br><br><br>
+                <form>
+                    <label for="tempoRegistro">Tempo de Registro na Empresa (em anos):</label>
+                    <input type="number" id="tempoRegistro" required><br><br><br>
+                    <button class="form-btn" type="button" onclick="calcularDataFerias()"><img class="img-btn" src="./images/calculadora.png"> Calcular Data de Início das Férias</button>
+                </form>
             <div id="resultado"></div>
         </div>
         <script src="./js/requerimento.js"></script>

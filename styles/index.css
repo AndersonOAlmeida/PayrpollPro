@@ -16,6 +16,9 @@ a {
     --cor-payroll: rgb(132, 14, 201);
     --cor-btn-slc: rgb(160, 100, 200);
     --cor-txt-btn: #FFFFFF;
+    --sombra-form: 0px 15px 20px rgba(0,0,0,0.2);
+    --fundo-form: #FFFFFF;
+    --cor-logo: #9fa4a8;
 }
 
 .cabecalho {
@@ -65,7 +68,7 @@ a {
 }
 
 .logo-img {
-    width: 5vw
+    width: 5vw;
 }
 
 .sair-img {
@@ -93,11 +96,13 @@ a {
 .container {
     display: flex;
     margin-top: 7vw;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .img-ptn {
-    margin-left: 10px;
-    width: 50vw;
+    margin-left: 10%;
+    width: 25vw;
 }
 
 .form__dem {
@@ -106,6 +111,12 @@ a {
     border-radius: 15px;
     padding: 12px;
     box-shadow: var(--sombra-form);
+    margin-right: 12vw;
+}
+
+.img-btn {
+    width: 1.3vw;
+    height: 3vh;
 }
 
 .form-btn {
