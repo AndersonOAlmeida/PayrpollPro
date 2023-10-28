@@ -1,3 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+:root {
+    --cor-payroll: rgb(132, 14, 201);
+    --cor-btn-slc: rgb(160, 100, 200);
+    --cor-txt-btn: #FFFFFF;
+    --sombra-form: 0px 15px 20px rgba(0,0,0,0.2);
+    --fundo-form: #FFFFFF;
+    --cor-logo: #9fa4a8;
+    --cor-clk: rgb(50, 5, 75);
+}
+
 #login-btn {
     border: 2px solid rgb(132, 14, 201);
     padding: 10px;

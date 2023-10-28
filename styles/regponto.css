@@ -22,6 +22,14 @@ a {
     --cor-clk: rgb(50, 5, 75);
 }
 
+.fundo-img {
+    position: absolute; /* coloca o elemento em uma camada diferente */
+    z-index: -1; /* seleciona a camada que o elemento deve ser posicionado */
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden; /* ajusta o video no tamanho certo da tela */
+}
+
 .cabecalho {
     display: flex;
     justify-content: space-between;
@@ -77,7 +85,7 @@ a {
 }
 
 .logo-img {
-    width: 5vw;
+    width: 5vw
 }
 
 .sair-img {
@@ -99,18 +107,9 @@ a {
     z-index: -1; /* seleciona a camada que o elemento deve ser posicionado */
     width: 100vw;
     height: 100vh;
-    overflow: hidden; /* ajusta o video no tamanho certo da tela */
-}
-
-.container {
-    display: flex;
-    margin-top: 7vw;
-    justify-content: space-between;
-    align-items: center;
 }
 
 .img-ptn {
-    margin-left: 10%;
     width: 25vw;
 }
 
@@ -120,7 +119,6 @@ a {
     border-radius: 15px;
     padding: 12px;
     box-shadow: var(--sombra-form);
-    margin-right: 12vw;
 }
 
 .img-btn {
@@ -141,17 +139,9 @@ a {
     flex-direction: row;
 }
 
-.registro:hover {
-    background-color: var(--cor-btn-slc);
-    transition: 0.2s;
-    cursor: pointer;
+.container {
+    display: flex;
+    justify-content: space-between;
+    margin: 8vw;
 }
 
-.img-ponto {
-    width: 20px;
-    margin-top: 5px;
-}
-
-.result-hr {
-    text-align: center;
-}
