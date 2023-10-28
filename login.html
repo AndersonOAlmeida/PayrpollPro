@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./images/guia-payroll.png" type="image/x-icon">
     <link rel="stylesheet" href="styles/Fonts.css">
     <link rel="stylesheet" href="styles/standard.css">
     <link rel="stylesheet" href="styles/login.css">
@@ -13,10 +14,10 @@
 
 <body>
     <header>
-        <div id="title ">
+        <a href="#" class="logo">
+            <img alt="PayrollPro" title="PayrollPro" src="./images/guia-payroll.png" class="logo-img">
             <h1>PayrollPro</h1>
-
-        </div>
+        </a>
         <ul>
             <a href="login.html" id="login-btn">
                 <li>Acesse sua conta</li>
@@ -37,7 +38,7 @@
             <p>Liberte seu potencial e simplifique sua jornada no trabalho com nosso revolucionário sistema de RH, onde o holerite é um clique e o ponto é uma batida de sucesso!</p>
 
             <form id="loginForm">
-                <input type="email" placeholder="E-mail" id="email">
+                <input type="CPF" placeholder="CPF" id="CPF">
                 <input type="password" placeholder="Senha" id="password">
                 <input type="submit" value="Entrar>">
             </form>
@@ -46,23 +47,8 @@
         <article>
             <img src="images/Images/—Pngtree—web background technology flat_5422225.png" alt="dashboard">
         </article>
+        <script src="./js/login.js"></script>
     </main>
-
-
-    <script>
-        document.getElementById("loginForm").addEventListener("submit", function(event) {
-            event.preventDefault();
-            const email = document.getElementById("email").value;
-            const password = document.getElementById("password").value;
-
-            if (email === "admin@admin.com" && password === "admin") {
-                // Redirecionar para a tela do menu inicial
-                window.location.href = "menu.html";
-            } else {
-                alert("Credenciais inválidas. Tente novamente.");
-            }
-        });
-    </script>
 </body>
 
 </html>

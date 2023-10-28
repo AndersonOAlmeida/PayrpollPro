@@ -44,3 +44,17 @@ a:hover {
     color: rgb(156, 156, 156);
     transition: 0.3s all;
 }
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo h1 {
+    width: 3vw;
+    color: var(--cor-logo);
+}
+
+.logo-img {
+    width: 5vw;
+}

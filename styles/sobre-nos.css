@@ -20,3 +20,17 @@
     background-color: rgb(132, 14, 201);
     color: white;
 }
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo h1 {
+    width: 3vw;
+    color: var(--cor-logo);
+}
+
+.logo-img {
+    width: 5vw;
+}

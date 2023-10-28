@@ -88,3 +88,17 @@
     background-color: #642CE9;
     color: #fff
 }
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo h1 {
+    width: 3vw;
+    color: var(--cor-logo);
+}
+
+.logo-img {
+    width: 5vw;
+}
