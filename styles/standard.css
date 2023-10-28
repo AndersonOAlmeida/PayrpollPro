@@ -1,0 +1,49 @@
+body {
+    background-color: rgb(255, 255, 255);
+    color: rgb(132, 13, 201);
+    font-family: poppinsregular;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+li {
+    display: inline-block;
+    margin: 20px;
+}
+
+h1 {
+    font-weight: 300;
+    font-family: poppinssemibold;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    margin-top: 100px;
+}
+
+span {
+    color: rgb(132, 13, 201);
+}
+
+input {
+    margin-top: 15px;
+    height: 20px;
+    padding: 15px;
+    border-radius: 20px;
+    border: solid 1px;
+    font-size: 15px;
+    background-color: rgb(245, 242, 242)
+}
+
+p {
+    color: rgb(27, 27, 27)
+}

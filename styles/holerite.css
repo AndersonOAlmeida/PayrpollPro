@@ -1,0 +1,25 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+.btn {
+    color: white;
+    background-color: rgb(132, 14, 201);
+    width: 400px;
+    margin: 25px;
+    border-radius: 15px;
+    font-size: 20px;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: rgb(160, 100, 200);
+    transition: 0.2s;
+}
+.tbl_hol {
+    align-items: center;
+    
+}

@@ -1,0 +1,41 @@
+@font-face {
+    font-family: 'poppinsblack';
+    src: url('../images/Fonts/poppins-black-webfont.woff2') format('woff2'), url('../images/Fonts//poppins-black-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'poppinsbold';
+    src: url('../images/Fonts/') format('woff2'), url('../images/Fonts//poppins-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'poppinslight';
+    src: url('../images/Fonts/poppins-light-webfont.woff2') format('woff2'), url('../images/Fonts//poppins-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'poppinsmedium';
+    src: url('../images/Fonts/poppins-medium-webfont.woff2') format('woff2'), url('../images/Fonts//poppins-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'poppinsregular';
+    src: url('../images/Fonts/poppins-regular-webfont.woff2') format('woff2'), url('../images/Fonts//poppins-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'poppinssemibold';
+    src: url('../images/Fonts/poppins-semibold-webfont.woff2') format('woff2'), url('../images/Fonts//poppins-semibold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}

@@ -1,0 +1,46 @@
+#title {
+    flex-direction: column;
+    line-height: 10px;
+}
+
+#login-btn {
+    border: 2px solid rgb(132, 14, 201);
+    padding: 10px;
+    border-radius: 15px;
+}
+
+#login-btn:hover {
+    background-color: rgb(132, 14, 201);
+    color: white;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+
+form [type="submit"] {
+    height: 50px;
+    width: 50%;
+    background-color: rgb(132, 14, 201);
+    color: white;
+    font-weight: bold;
+}
+
+form [type="submit"]:hover {
+    cursor: pointer;
+}
+
+img {
+    width: 600px;
+}
+
+a {
+    color: rgb(132, 13, 201);
+}
+
+a:hover {
+    color: rgb(156, 156, 156);
+    transition: 0.3s all;
+}

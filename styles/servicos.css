@@ -1,0 +1,90 @@
+#login-btn {
+    border: 2px solid rgb(132, 14, 201);
+    padding: 10px;
+    border-radius: 15px;
+}
+
+#login-btn:hover {
+    background-color: rgb(132, 14, 201);
+    color: white;
+}
+
+.tabela-preco {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: min(1300px, 100%);
+    margin: auto;
+    max-height: 100px
+}
+
+.card-preco {
+    flex: 1;
+    max-width: 330px;
+    background-color: rgb(132, 14, 201);
+    margin: 20px 10px;
+    text-align: center;
+    cursor: pointer;
+    overflow: hidden;
+    color: #ffffff;
+    transition: .3% linear;
+}
+
+.card-preco:hover .card-preco-header {
+    box-shadow: 0 0 0 26em rgb(186, 89, 255);
+}
+
+.card-preco-header {
+    background-color: rgb(186, 89, 255);
+    display: inline-block;
+    color: rgb(255, 255, 255);
+    padding: 12px 30px;
+    border-radius: 0 0 20px 20px;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: .4s line;
+}
+
+.preco {
+    font-size: 60px;
+    color: rgb(255, 255, 255);
+    margin: 40px 0;
+    transition: .2s linear;
+}
+
+.preco sup,
+.preco span {
+    font-size: 15px;
+    font-weight: 700;
+    color: rgb(255, 255, 255)
+}
+
+.card-preco:hover,
+.card-preco:hover .preco {
+    color: rgb(255, 255, 255)
+}
+
+.card-preco li {
+    font-size: 14px;
+    text-transform: uppercase;
+    padding: 1px 0;
+}
+
+.btn-plano {
+    display: inline-block;
+    margin-bottom: 40px;
+    margin-top: 80px;
+    border: 2px solid #ffffff;
+    color: #ffffff;
+    padding: 18px 40px;
+    border-radius: 8px;
+    text-transform: uppercase;
+    font-weight: 500;
+    transition: .3s linear;
+}
+
+.btn-plano:hover {
+    background-color: #642CE9;
+    color: #fff
+}

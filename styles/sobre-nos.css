@@ -1,0 +1,22 @@
+#login-btn {
+    border: 2px solid rgb(132, 14, 201);
+    padding: 10px;
+    border-radius: 15px;
+}
+
+#login-btn:hover {
+    background-color: rgb(132, 14, 201);
+    color: white;
+}
+
+#servicos-parceiros-btn {
+    border: 2px solid rgb(132, 14, 201);
+    padding: 10px;
+    border-radius: 30px;
+    text-decoration: none
+}
+
+#servicos-parceiros-btn:hover {
+    background-color: rgb(132, 14, 201);
+    color: white;
+}
