@@ -145,4 +145,11 @@ a {
     flex-direction: row;
 }
 
+.form-btn:hover {
+    background-color: var(--cor-btn-slc);
+    transition: 0.3s;
+}
 
+.form-btn:active {
+    background-color: var(--cor-clk);
+}
