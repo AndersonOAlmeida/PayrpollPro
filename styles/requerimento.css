@@ -113,11 +113,12 @@ a {
 .container {
     display: flex;
     justify-content: space-between;
-    margin: 8vw;
+    margin: 4vw;
 }
 
 .calendario {
     width: 25vw;
+    margin-left: 8vw;
 }
 
 .form__dem {
@@ -126,7 +127,8 @@ a {
     border-radius: 15px;
     padding: 12px;
     box-shadow: var(--sombra-form);
-    margin-top: -5vh;
+    margin-right: 10vw;
+    /* margin-top: 2vw; */
 }
 
 .img-btn {
