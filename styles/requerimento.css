@@ -109,6 +109,13 @@ a {
     height: 100vh;
 }
 
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    margin: 8vw;
+}
+
 .calendario {
     width: 25vw;
 }
@@ -119,6 +126,7 @@ a {
     border-radius: 15px;
     padding: 12px;
     box-shadow: var(--sombra-form);
+    margin-top: -5vh;
 }
 
 .img-btn {
@@ -148,9 +156,14 @@ a {
     background-color: var(--cor-clk);
 }
 
-.container {
-    display: flex;
-    justify-content: space-between;
-    margin: 8vw;
+.input {
+    width: 90%;
+    height: 5%;
+    padding: 2%;
+    border-color: var(--cor-payroll);
+    border-radius: 10px;
 }
 
+.input:active {
+    border-color: var(--cor-payroll);
+}

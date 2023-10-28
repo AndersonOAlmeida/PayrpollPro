@@ -125,6 +125,7 @@ a {
     border-radius: 15px;
     padding: 12px;
     box-shadow: var(--sombra-form);
+    margin-top: -5vh;
 }
 
 .img-btn {
@@ -152,4 +153,16 @@ a {
 
 .form-btn:active {
     background-color: var(--cor-clk);
+}
+
+.input {
+    width: 90%;
+    height: 5%;
+    padding: 2%;
+    border-color: var(--cor-payroll);
+    border-radius: 10px;
+}
+
+.input:active {
+    border-color: var(--cor-payroll);
 }
