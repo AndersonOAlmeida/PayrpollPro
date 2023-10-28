@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Styles/Fonts.css">
+    <link rel="stylesheet" href="Styles/standard.css">
+    <link rel="stylesheet" href="Styles/index.css">
+    <link rel=" stylesheet " href="Styles/media.css ">
+    <title>PayrollPro</title>
+</head>
+
+<body>
+    <header>
+        <div id="title ">
+            <h1>PayrollPro</h1>
+
+        </div>
+        <ul>
+            <a href="" id="login-btn">
+                <li>Acesse sua conta</li>
+            </a>
+            <a href="Servicos.html" id="servicos-btn">
+                <li>Serviços</li>
+            </a>
+            <a href="Sobre-Nos.html" id="sobrenos-btn">
+                <li>Sobre nós</li>
+            </a>
+        </ul>
+
+
+    </header>
+    <main>
+        <aside>
+            <h2><span>Acesse sua conta</span></h2>
+            <p>Liberte seu potencial e simplifique sua jornada no trabalho com nosso revolucionário sistema de RH, onde o holerite é um clique e o ponto é uma batida de sucesso!</p>
+
+            <form id="loginForm">
+                <input type="email" placeholder="E-mail" id="email">
+                <input type="password" placeholder="Senha" id="password">
+                <input type="submit" value="Entrar>">
+            </form>
+
+        </aside>
+        <article>
+            <img src="Components/Images/—Pngtree—web background technology flat_5422225.png" alt="dashboard">
+        </article>
+    </main>
+
+
+    <script>
+        document.getElementById("loginForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+            const email = document.getElementById("email").value;
+            const password = document.getElementById("password").value;
+
+            if (email === "admin@admin.com" && password === "admin") {
+                // Redirecionar para a tela do menu inicial
+                window.location.href = "menu.html";
+            } else {
+                alert("Credenciais inválidas. Tente novamente.");
+            }
+        });
+    </script>
+</body>
+
+</html>
