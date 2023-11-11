@@ -1,12 +1,33 @@
-function calcularHoras() {
-    const entrada = document.getElementById('entrada').value;
-    const saida = document.getElementById('saida').value;
+// Simulando uma lista de registros de ponto
+let registrosPonto = [];
+  
+function baterPonto() {
+  const agora = new Date();
+  const horaAtual = agora.getHours();
+  const minutoAtual = agora.getMinutes();
 
-    const entradaHora = new Date(`2000-01-01T${entrada}`);
-    const saidaHora = new Date(`2000-01-01T${saida}`);
+  const registro = {
+    hora: horaAtual,
+    minuto: minutoAtual,
+    data: agora.toLocaleDateString(),
+  };
 
-    const diffMillis = saidaHora - entradaHora;
-    const diffHours = diffMillis / 1000 / 60 / 60;
+  registrosPonto.push(registro);
 
-    document.getElementById('totalHoras').textContent = diffHours.toFixed(2);
+  exibirRegistrosPonto();
+}
+
+function exibirRegistrosPonto() {
+  const outputDiv = document.getElementById("output");
+  outputDiv.innerHTML = "<h3>Registros de Ponto:</h3>";
+
+  registrosPonto.forEach(registro => {
+    const horaFormatada = formatoHora(registro.hora, registro.minuto);
+    const linha = `${registro.data} - ${horaFormatada}<br>`;
+    outputDiv.innerHTML += linha;
+  });
+}
+
+function formatoHora(hora, minuto) {
+  return `${hora.toString().padStart(2, '0')}:${minuto.toString().padStart(2, '0')}`;
 }
