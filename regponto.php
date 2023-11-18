@@ -1,5 +1,10 @@
+<?php
+    session_start();
+    date_default_timezone_set('America/Sao_Paulo');
+?>
+
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,7 +24,7 @@
         </a>
         <nav>
             <ul class="menu">
-                <li><a href="./regponto.html">Sistema de Ponto</a></li>
+                <li><a href="./regponto.php">Sistema de Ponto</a></li>
                 <li><a href="./requerimento.html">Solicitar Férias</a></li>
                 <li><a href="./demonstrativo.html">Demonstrativo de Férias</a></li>
                 <li><a class="btn-sair" href="./login.html"><img class="sair-img" src="./images/sair.png"> Sair</a></li>
@@ -31,8 +36,16 @@
         <div class="form__dem">
             <h1>Sistema de Ponto</h1><br><hr><br>
 
-                <button class="form-btn" onclick="baterPonto()">Bater Ponto</button>
-                
+            <?php
+            if(isset($_SESSION['msg'])){
+                echo $_SESSION['msg'];
+                unset($_SESSION['msg']);
+            }
+            ?>
+            
+            <p id="horario"><?php echo date ("d/m/Y H:i:s")?></p>
+            <button class="form-btn"><a href="registrar_ponto.php">Bater Ponto</a></button>
+            
             <div id="output"></div>
         </div>
         <script src="./js/script.js"></script>
