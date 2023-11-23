@@ -1,33 +1,12 @@
-// Simulando uma lista de registros de ponto
-let registrosPonto = [];
-  
-function baterPonto() {
-  const agora = new Date();
-  const horaAtual = agora.getHours();
-  const minutoAtual = agora.getMinutes();
+        //var apHorario = document.getElementById("horario");
 
-  const registro = {
-    hora: horaAtual,
-    minuto: minutoAtual,
-    data: agora.toLocaleDateString(),
-  };
+        function atualizarHorario(){
+          var data = new Date().toLocateString("pt-br", {
+              timeZone: "America/Sao_Paulo"
+          });
+          //var formatarData = data.replace(",", " - ");
+          //apHorario.innerHTML = formatarData;
+          document.getElementById("horario").innerHTML = data.replace(",", " - ");
+      }
 
-  registrosPonto.push(registro);
-
-  exibirRegistrosPonto();
-}
-
-function exibirRegistrosPonto() {
-  const outputDiv = document.getElementById("output");
-  outputDiv.innerHTML = "<h3>Registros de Ponto:</h3>";
-
-  registrosPonto.forEach(registro => {
-    const horaFormatada = formatoHora(registro.hora, registro.minuto);
-    const linha = `${registro.data} - ${horaFormatada}<br>`;
-    outputDiv.innerHTML += linha;
-  });
-}
-
-function formatoHora(hora, minuto) {
-  return `${hora.toString().padStart(2, '0')}:${minuto.toString().padStart(2, '0')}`;
-}
+      setInterval(atualizarHorario, 1000);

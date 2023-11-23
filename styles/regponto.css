@@ -149,6 +149,10 @@ a {
     flex-direction: row;
 }
 
+a {
+    color: var(--cor-txt-btn);
+}
+
 .form-btn:hover {
     background-color: var(--cor-btn-slc);
     transition: 0.3s;
