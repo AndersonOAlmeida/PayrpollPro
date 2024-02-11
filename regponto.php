@@ -46,7 +46,7 @@
             ?>
             
             <p id="horario"><?php echo date ("d/m/Y H:i:s")?></p>
-            <button class="form-btn"><a href="registrar_ponto.php">Bater Ponto</a></button>
+            <button class="form-btn"><a href="registrar_ponto.php">Bater Ponto</a></button><br>
             <button class="form-btn"><a href="registrar_ponto.php">Consultar Ponto</a></button><br>
             <?php 
 
