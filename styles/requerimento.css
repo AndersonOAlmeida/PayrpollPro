@@ -128,7 +128,7 @@ a {
     padding: 12px;
     box-shadow: var(--sombra-form);
     margin-right: 10vw;
-    /* margin-top: 2vw; */
+    width: 30%;
 }
 
 .img-btn {

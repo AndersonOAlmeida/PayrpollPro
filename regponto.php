@@ -32,7 +32,9 @@
         </nav>
     </header>
     <main class="container">
-        <img src="./images/imagem-folha-ponto.png" alt="Imagem ilustrativa de alguem batendo ponto" class="img-ptn">
+        <div class="imagem-ponto">
+            <img src="./images/imagem-folha-ponto.png" alt="Imagem ilustrativa de alguem batendo ponto" class="img-ptn">
+        </div>
         <div class="form__dem">
             <h1>Sistema de Ponto</h1><br><hr><br>
 
@@ -45,7 +47,41 @@
             
             <p id="horario"><?php echo date ("d/m/Y H:i:s")?></p>
             <button class="form-btn"><a href="registrar_ponto.php">Bater Ponto</a></button>
+            <button class="form-btn"><a href="registrar_ponto.php">Consultar Ponto</a></button><br>
+            <?php 
+
+            include_once("conexao.php");
+
+            $query_horarios = "SELECT data_entrada, entrada, saida_intervalo, retorno_intervalo, saida, usuario_id FROM ponto ORDER BY id DESC";
+
+            $result_horarios = $conn->prepare($query_horarios);
+            $result_horarios->execute();
+
+            while($row_horario = $result_horarios->fetch(PDO::FETCH_ASSOC)){
+                extract($row_horario);
+                // var_dump($row_horario);
+                echo "Data de Cadastro: $data_entrada <br>";
+                echo "Registro de Ponto: $entrada <br>";
+                echo "Registro de Ponto: $saida_intervalo <br>";
+                echo "Registro de Ponto: $retorno_intervalo <br>";
+                echo "Registro de Ponto: $saida <br>";
+                echo "Funcionário: ";
+
+                break 1;
+            }
+
+            // Converte os dois horarios para um objeto DateTime do PHP
+            $entrada = DateTime::createFromFormat('H:i:s', $entrada);
+            $saida = DateTime::createFromFormat('H:i:s', $saida);
+
+            // diff - Retorna a diferença entre dois objetos DateTime
+            $intervalo = $entrada->diff($saida);
+
+            // Formata a diferença entre horarios
+            echo $intervalo->format('%H:%I:%S');
+
             
+            ?>
             <div id="output"></div>
         </div>
         <script src="./js/script.js"></script>

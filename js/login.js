@@ -5,7 +5,7 @@ document.getElementById("loginForm").addEventListener("submit", function(event) 
 
     if (CPF === "000.000.000-00" && password === "admin") {
         // Redirecionar para a tela do menu inicial
-        window.location.href = "regponto.html";
+        window.location.href = "regponto.php";
     } else {
         alert("Credenciais inválidas. Tente novamente.");
     }
